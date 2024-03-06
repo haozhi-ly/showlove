@@ -1,18 +1,3 @@
-var wH = window.innerHeight;
-var wW = window.innerWidth;
-var generateStars = function generateStars(f) {
-    for (var e = 0; e < f; e++) {
-        var d = document.createElement("div");
-        d.className = e % 20 == 0 ? "star star--big" : e % 9 == 0 ? "star star--medium" : "star";
-        d.setAttribute("style", "top:" + Math.round(Math.random() * wH) + "px;left:" + Math.round(Math.random() * wW) + "px;animation-duration:" + (Math.round(Math.random() * 3000) + 3000) + "ms;animation-delay:" + Math.round(Math.random() * 3000) + "ms;");
-        document.body.appendChild(d)
-    }
-};
-generateStars(150);
-
-
-
-
 /*
  * Shape Shifter
  * A canvas experiment
@@ -36,7 +21,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
       S.UI.simulate(
-        "3|2|1|❤老|婆|别|眨|眼|❤"
+        "3|2|1|❤小|宝|贝|别|眨|眼|❤"
       );
     }
 
